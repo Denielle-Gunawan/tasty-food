@@ -1,0 +1,137 @@
+:root {
+    --dark: #000000;
+    --light: #ffffff;
+    --bg: #f2f2f2;
+    --seconddary: #919191;
+    --litle: #ffd700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+/* Navbar start */
+.background {
+    height: 100%;
+    width: 100%;
+    background-image: url('/img/Group 70.png');
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    padding-bottom: 185px;
+    padding-left: 10%;
+    padding-right: 3%;
+}
+
+.hero-contact h1 {
+    display: flex;
+    color: var(--light);
+    padding-top: 9%;
+    margin-left: -6vh;
+    font-size: 49px;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: white;
+    padding-right: 46.5%;
+    margin-top: 55px;
+    margin-left: -8.5vh;
+}
+
+.navbar .navbar-nav a {
+    color: var(--light);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 .4rem;
+    margin-top: 55px;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.2rem solid var(--light);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.7);
+}
+
+
+.navbar .nav {
+    font-size: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 8%;
+    position: absolute;
+    top: 2000px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: background-color .5s ease;
+    color: white;
+}
+/* navbar end */
+
+/* kontak start */
+.container-kontak-fluid {
+    padding: 3rem;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.massage {
+    height: 200px;
+}
+
+.btn {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

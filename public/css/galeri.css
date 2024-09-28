@@ -1,0 +1,241 @@
+:root {
+    --dark: #000000;
+    --light: #ffffff;
+    --bg: #f2f2f2;
+    --seconddary: #919191;
+    --litle: #ffd700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+/* Navbar start */
+.background {
+    height: 100%;
+    width: 100%;
+    background-image: url('/img/Group 70.png');
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    padding-bottom: 185px;
+    padding-left: 10%;
+    padding-right: 3%;
+}
+
+.hero-contact h1 {
+    display: flex;
+    color: var(--light);
+    padding-top: 9%;
+    margin-left: -6vh;
+    font-size: 49px;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: white;
+    padding-right: 46.5%;
+    margin-top: 55px;
+    margin-left: -8.5vh;
+}
+
+.navbar .navbar-nav a {
+    color: var(--light);
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 .4rem;
+    margin-top: 55px;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.2rem solid var(--light);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.7);
+}
+
+
+.navbar .nav {
+    font-size: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 8%;
+    position: absolute;
+    top: 2000px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: background-color .5s ease;
+    color: white;
+}
+/* navbar end */
+
+.carousel {
+    padding-top: 5%;
+    width: 90%;
+    /* Atur ukuran lebar carousel, sesuaikan dengan keinginan */
+    margin: 0 auto;
+    /* Memusatkan carousel */
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    /* Atur tinggi carousel sesuai kebutuhan */
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: white;
+    /* Lingkaran putih */
+    border-radius: 50%;
+    /* Membuat tombol berbentuk lingkaran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(80%);
+}
+
+.carousel-control-prev {
+    left: 100px;
+    /* Jarak dari ujung kiri */
+}
+
+.carousel-control-next {
+    right: 100px;
+    /* Jarak dari ujung kanan */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    /* Mengubah warna ikon panah menjadi hitam */
+}
+
+
+/* galeri start */
+.container-galeri {
+    display: block;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    text-align: center;
+    /* Menyelaraskan konten di tengah */
+}
+
+.gambar {
+    width: 100%;
+    height: 67%;
+    object-fit: cover;
+    border-radius: 5%;
+    display: block;
+    padding: 1% auto;
+    margin-bottom: 1px;
+    /* Menambahkan margin bawah antar gambar vertikal */
+}
+
+
+
+/* footer start */
+.footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding-top: 5%;
+}
+
+.container-footer {
+    display: flex;
+    padding: 1rem 6%;
+    justify-content: space-between;
+}
+
+.text-footer {
+    max-width: 56.6vh;
+}
+
+.text-footer p {
+    padding: 15px 0;
+    font-size: 1rem;
+    color: rgb(145, 145, 145);
+}
+
+.text-footer .sosmed-link a img {
+    height: 45px;
+    width: 45px;
+    margin: 30px 2px;
+}
+
+.link-footer,
+.privacy-footer,
+.contact-footer {
+    padding-left: 4rem;
+}
+
+.link-footer h3,
+.privacy-footer h3,
+.contact-footer h3 {
+    padding-bottom: 10px;
+}
+
+.link-footer a,
+.privacy-footer a,
+.contact-footer a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    color: var(--light);
+}
+
+.contact-footer img {
+    height: 40px;
+    width: 40px;
+}
+
+.img-email,
+.img-telp,
+.img-addres {
+    display: flex;
+}
+
+.copyright-footer {
+    text-align: center;
+    padding: 5px;
+}
+
+.copyright-footer a {
+    color: var(--seconddary);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+/* footer end */
