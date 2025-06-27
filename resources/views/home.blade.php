@@ -42,13 +42,16 @@
                                     <a class="nav-link active" href="#">KONTAK</a>
                                 </li>
                                 @auth
-                                    <li>
-                                        <form method="POST" action="{{ route('logout') }}">
-                                            @csrf
-                                            <button type="submit" class="btn logout">Logout</button>
-                                        </form>
-                                    </li>
+                                    @if(in_array(auth()->user()->level, ['admin', 'staff', 'guest']))
+                                        <li>
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+                                                <button type="submit" class="btn logout">Logout</button>
+                                            </form>
+                                        </li>
+                                    @endif
                                 @endauth
+
                             </ul>
                         </div>
                     </div>
@@ -102,7 +105,7 @@
                     </div>
                 </div>
 
-                
+
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

@@ -67,19 +67,30 @@ new class extends Component {
 
         Session::flash('status', 'verification-link-sent');
     }
-}; ?>
+};
+?>
 
 <section class="w-full">
     @include('partials.settings-heading')
 
     <x-settings.layout :heading="__('Profile')" :subheading="__('Update your name and email address')">
         <form wire:submit="updateProfileInformation" class="my-6 w-full space-y-6">
+            <!-- Name -->
             <flux:input wire:model="name" :label="__('Name')" type="text" required autofocus autocomplete="name" />
 
+            <!-- Level (readonly) -->
+            <flux:input 
+                label="Level" 
+                value="{{ auth()->user()->level }}" 
+                readonly 
+                class="dark:text-white text-gray-700" 
+            />
+
+            <!-- Email -->
             <div>
                 <flux:input wire:model="email" :label="__('Email')" type="email" required autocomplete="email" />
 
-                @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail &&! auth()->user()->hasVerifiedEmail())
+                @if (auth()->user() instanceof \Illuminate\Contracts\Auth\MustVerifyEmail && ! auth()->user()->hasVerifiedEmail())
                     <div>
                         <flux:text class="mt-4">
                             {{ __('Your email address is unverified.') }}

@@ -11,7 +11,10 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        //
+        // Tambahkan middleware route kustom di sini
+        $middleware->alias([
+            'check.level' => \App\Http\Middleware\CheckLevel::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

@@ -11,6 +11,15 @@ Route::view('home', 'home')
     ->middleware(['auth', 'verified'])
     ->name('home');
 
+Route::middleware(['auth', 'check.level:admin'])->get('/admin', function () {
+    return view('admin.dashboard');
+});
+
+Route::middleware(['auth', 'check.level:staff'])->get('/staff', function () {
+    return view('staff.dashboard');
+});
+
+
 Route::middleware(['auth'])->group(function () {
     Route::redirect('settings', 'settings/profile');
 
@@ -19,4 +28,4 @@ Route::middleware(['auth'])->group(function () {
     Volt::route('settings/appearance', 'settings.appearance')->name('settings.appearance');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
