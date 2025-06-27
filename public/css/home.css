@@ -1,0 +1,120 @@
+body {
+    overflow-x: hidden;
+}
+
+/* nav start */
+
+.navbar-brand {
+    margin-right: 6vh;
+}
+
+.navbar-nav {
+    font-weight: 500;
+}
+
+.hero-img {
+    position: absolute;
+    top: -32vh;
+    left: 110vh;
+    width: 130vh;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* --- RESPONSIVE FIX --- */
+@media (max-width: 1000px) {
+    .hero-img {
+        position: static;
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+.logout {
+    color: aliceblue;
+    background-color: rgb(255, 0, 0);
+}
+/* nav end */
+
+
+
+/* home start */
+
+.container-home {
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+
+.garis {
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.home-p {
+    max-width: 95.4%;
+}
+
+.block-text {
+    display: block;
+}
+
+.btn-tentang {
+    width: 280px ;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: black;
+}
+/* home end */
+
+
+/* tentang start */
+
+.container-tentang {
+    position: relative; /* penting: override absolute dari layar besar */
+    left: auto;
+    right: auto;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.garis-2 {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 20px;
+
+}
+
+/* --- Layar besar: desktop dan ke atas --- */
+@media (min-width: 1000px) {
+    .container-tentang {
+        padding-top: 25vh;
+        position: relative ;
+        right: 50vh;
+        left: 50vh;
+    }
+
+    .garis-2 {
+        position: absolute !important;
+        left: 37.5vh;
+    }
+}
+/* tentang end */
+
+
+
+/* card star */
+
+.background{
+    background-image: url(../ASET/Group\ 70@2x.png) !important;
+    width: auto;
+}
+/* card end */
