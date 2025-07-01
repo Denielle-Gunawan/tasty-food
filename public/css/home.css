@@ -2,25 +2,28 @@ body {
     overflow-x: hidden;
 }
 
+/* * {
+    outline: 1px solid red;
+} */
+
 /* nav start */
-
-.navbar-brand {
-    margin-right: 6vh;
+.navbar {
+    padding-top: 7vh;
+    padding-left: 10vh;
 }
 
-.navbar-nav {
-    font-weight: 500;
-}
+.navbar-nav {}
 
 .hero-img {
     position: absolute;
-    top: -32vh;
-    left: 110vh;
-    width: 130vh;
+    top: -24vh;
+    left: 122vh;
+    width: 127vh;
     height: auto;
     z-index: -1;
-    object-fit: cover;
 }
+
+
 
 /* --- RESPONSIVE FIX --- */
 @media (max-width: 1000px) {
@@ -31,12 +34,17 @@ body {
         height: auto;
         margin-top: 20px;
     }
+
+    .navbar {
+        padding: 0;
+    }
 }
 
 .logout {
     color: aliceblue;
     background-color: rgb(255, 0, 0);
 }
+
 /* nav end */
 
 
@@ -45,9 +53,8 @@ body {
 
 .container-home {
     overflow-x: hidden;
-    word-wrap: break-word;
+    padding-left: 10vh;
 }
-
 
 .garis {
     width: 80px;
@@ -57,7 +64,7 @@ body {
 }
 
 .home-p {
-    max-width: 95.4%;
+    max-width: 543px;
 }
 
 .block-text {
@@ -65,21 +72,24 @@ body {
 }
 
 .btn-tentang {
-    width: 280px ;
+    width: 280px;
     color: rgb(255, 255, 255);
     font-weight: 600;
     background-color: black;
 }
+
+@media (max-width: 1000px) {
+    .container-home {
+        padding-left: 0vh;
+    }
+}
 /* home end */
 
 
-/* tentang start */
 
+/* tentang start */
 .container-tentang {
-    position: relative; /* penting: override absolute dari layar besar */
-    left: auto;
-    right: auto;
-    max-width: 540px;
+    max-width: 545px;
     margin: 0 auto;
     text-align: center;
     padding-top: 60px;
@@ -89,32 +99,20 @@ body {
     width: 100px;
     height: 2px;
     background-color: black;
-    margin-bottom: 20px;
-
+    margin: 20px auto;
 }
 
-/* --- Layar besar: desktop dan ke atas --- */
-@media (min-width: 1000px) {
-    .container-tentang {
-        padding-top: 25vh;
-        position: relative ;
-        right: 50vh;
-        left: 50vh;
-    }
-
-    .garis-2 {
-        position: absolute !important;
-        left: 37.5vh;
-    }
-}
 /* tentang end */
 
 
 
-/* card star */
 
-.background{
-    background-image: url(../ASET/Group\ 70@2x.png) !important;
-    width: auto;
+
+/* card start */
+.container-card {
+background-image: url(../ASET/Group\ 70@2x.png);
+background-size: cover;
+background-position: center;
+width: auto;
+height: auto;
 }
-/* card end */
