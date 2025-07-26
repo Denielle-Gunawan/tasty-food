@@ -129,10 +129,10 @@
 
 
    <section class="container-card mt-5 pt-5">
-     <div class="row row-cols-1 row-cols-md-4">
+     <div class="row row-cols-md-4">
         <div class="cols-12">
+            <img src="ASET/img-1.png" class="card-img-top" alt="...">
             <div class="card">
-                <img src="ASET/img-1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.
@@ -141,8 +141,8 @@
             </div>
         </div>
         <div class="cols-12">
+            <img src="ASET/img-2.png" class="card-img-top" alt="...">
             <div class="card">
-                <img src="ASET/img-2.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.
@@ -151,8 +151,8 @@
             </div>
         </div>
         <div class="cols-12">
+            <img src="ASET/img-3.png" class="card-img-top" alt="...">
             <div class="card">
-                <img src="ASET/img-3.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.
@@ -161,8 +161,8 @@
             </div>
         </div>
         <div class="cols-12">
+            <img src="ASET/img-4.png" class="card-img-top" alt="...">
             <div class="card">
-                <img src="ASET/img-4.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet,consectetur adipiscing elit.
